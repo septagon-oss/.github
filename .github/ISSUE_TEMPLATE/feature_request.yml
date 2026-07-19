@@ -3,7 +3,6 @@ description: Propose a focused improvement with a clear ownership boundary and o
 title: "feat: "
 labels:
   - enhancement
-  - needs-triage
 body:
   - type: textarea
     id: problem

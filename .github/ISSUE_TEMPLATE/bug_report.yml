@@ -3,7 +3,6 @@ description: Report a defect with enough detail to reproduce, triage, and fix it
 title: "bug: "
 labels:
   - bug
-  - needs-triage
 body:
   - type: textarea
     id: summary
