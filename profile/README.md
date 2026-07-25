@@ -9,26 +9,35 @@ Built by [Septagon](https://septagon.dev). Licensed under Apache 2.0.
 | If you want to… | go to |
 |-----------------|-------|
 | Run the complete seeded SaaS starter | [`platformkit`](https://github.com/septagon-oss/platformkit) — the canonical runnable front door |
-| Follow the starter tutorial | [`pk-docs`](https://github.com/septagon-oss/pk-docs/blob/main/docs/v0.0.0/starter-saas-tutorial.md) — architecture, ADRs, tutorials |
+| Follow the starter tutorial | [Documentation site](https://septagon-oss.github.io/pk-docs/) — quickstart, extensions, API contract, runtime surfaces |
 | Use the core building blocks | [`pk-core`](https://github.com/septagon-oss/pk-core) — module system, authz, entities, security |
 | Browse the reference modules | [`pk-modules`](https://github.com/septagon-oss/pk-modules) — tenant, user, auth, api key, content, notification, audit, admin, health |
 | Use the CLI and scaffold tools | [`pk-tools`](https://github.com/septagon-oss/pk-tools) — doctor, verify, explain |
 | Ask questions or discuss | [Community discussions](https://github.com/septagon-dev/platformkit-community/discussions) |
 
 ```
-go get github.com/septagon-oss/pk-core@v0.1.0
+go get github.com/septagon-oss/pk-core@latest
 ```
 
 ## Quickstart
 
+No clone, no pinned version to go stale — `@latest` resolves the newest release
+through the Go module proxy:
+
 ```bash
-git clone --branch v0.1.0 --depth 1 https://github.com/septagon-oss/platformkit
-cd platformkit
-go run .
-# → http://localhost:8080 — a complete SaaS app with auth, admin, and nine reference modules
+go run github.com/septagon-oss/platformkit@latest
+# → http://127.0.0.1:8080 — a complete SaaS app with auth, admin, and nine reference modules
 ```
 
-Full tutorial → [pk-docs starter-saas guide](https://github.com/septagon-oss/pk-docs/blob/main/docs/v0.0.0/starter-saas-tutorial.md)
+Prefer the source, or want to extend it? Clone the default branch:
+
+```bash
+git clone https://github.com/septagon-oss/platformkit && cd platformkit && go run .
+```
+
+The terminal prints the local development login. Full quickstart →
+[septagon-oss.github.io/pk-docs](https://septagon-oss.github.io/pk-docs/docs/current-quickstart/) ·
+Latest release → [releases/latest](https://github.com/septagon-oss/platformkit/releases/latest)
 
 ## Curated public repository map
 
@@ -40,11 +49,10 @@ Full tutorial → [pk-docs starter-saas guide](https://github.com/septagon-oss/p
 | Core | [`pk-design`](https://github.com/septagon-oss/pk-design) | Design tokens, themes, component contracts |
 | Runtime | [`pk-runtime`](https://github.com/septagon-oss/pk-runtime) | HTTP, health checks, request context, host composition |
 | Modules | [`pk-modules`](https://github.com/septagon-oss/pk-modules) | Reference modules — tenant, user, auth, api key, content, notification, audit, admin, health |
-| Apps | [`pk-apps`](https://github.com/septagon-oss/pk-apps) | Runnable compositions — starter-saas, examples |
+| Apps | [`pk-apps`](https://github.com/septagon-oss/pk-apps) | The canonical `starterapp` composition and two extension references |
 | Tools | [`pk-tools`](https://github.com/septagon-oss/pk-tools) | CLI, scaffold, developer workflows |
 | Client | [`pk-client`](https://github.com/septagon-oss/pk-client) | HTTP client — CRUD, bulk, typed envelopes |
 | Test | [`pk-testkit`](https://github.com/septagon-oss/pk-testkit) | Conformance, flow, and API test contracts |
-| Deploy | [`pk-deploy`](https://github.com/septagon-oss/pk-deploy) | Deployment kernel — plans, workers, evidence |
 | Docs | [`pk-docs`](https://github.com/septagon-oss/pk-docs) | Architecture, ADRs, requirements, tutorials |
 
 ## Open-core model
