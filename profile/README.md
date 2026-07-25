@@ -52,6 +52,9 @@ Latest release → [releases/latest](https://github.com/septagon-oss/platformkit
 | Apps | [`pk-apps`](https://github.com/septagon-oss/pk-apps) | The canonical `starterapp` composition and two extension references |
 | Tools | [`pk-tools`](https://github.com/septagon-oss/pk-tools) | CLI, scaffold, developer workflows |
 | Client | [`pk-client`](https://github.com/septagon-oss/pk-client) | HTTP client — CRUD, bulk, typed envelopes |
+| Design | [`pk-ui`](https://github.com/septagon-oss/pk-ui) | Component contracts, ARIA builder, gomponents renderers |
+| Design | [`tw`](https://github.com/septagon-oss/tw) | Typed utility classes + CSS emission — no Node, no Tailwind build |
+| Design | [`styleengine`](https://github.com/septagon-oss/styleengine) | Typed Go-native CSS construction, parsing, sanitizing |
 | Test | [`pk-testkit`](https://github.com/septagon-oss/pk-testkit) | Conformance, flow, and API test contracts |
 | Docs | [`pk-docs`](https://github.com/septagon-oss/pk-docs) | Architecture, ADRs, requirements, tutorials |
 
