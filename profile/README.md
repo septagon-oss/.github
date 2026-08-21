@@ -1,4 +1,4 @@
-# PlatformKit OSS
+# Septagon OSS
 
 **PlatformKit** is a modular SaaS framework in Go for building governed, composable applications — identity, tenancy, admin, content, audit, notifications, and deployment paths, without rebuilding the same substrate every time.
 
